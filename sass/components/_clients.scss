@@ -1,0 +1,45 @@
+.section-title {
+    @extend %section-title;
+}
+
+.client-list {
+    display: flex;
+    justify-content: center;
+    gap: var(--list-gap);
+}
+  
+.client-item {
+    flex-basis: calc((100% - (5 * var(--list-gap))) / 6);
+}
+  
+.client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid var(--client-icon-color);
+    border-radius: 4px;
+  
+    color: var(--client-icon-color);
+    @include transition(border);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }    
+}
+  
+.client-icon {
+    fill: currentColor;
+}
+  
+.client-link  {
+    svg {
+        @include transition(color);
+    }   
+}
+
+.client-link:hover svg,
+.client-link:focus svg {
+        color: var(--accent-color);
+}

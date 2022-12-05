@@ -1,0 +1,37 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --white-color: #ffffff;
+    --background-grey-color: #f5f4fa;
+    --footer-background-color: #2f303a;
+    --black-color: #000000;
+    --black-opacity-color: rgba(255, 255, 255, 0.6);
+    --modal-comment-placeholder: rgba(117, 117, 117, 0.5);
+    --background-active-button: #188ce8;
+    --background-footer-icon: rgba(255, 255, 255, 0.1);
+    --background-item-work: rgba(47, 48, 58, 0.8);
+    --background-hero: #c4c4c4;
+    --background-item-projects: rgba(33, 150, 243, 0.9);
+    --background-backdrop: rgba(0, 0, 0, 0.2);
+    --projects-border-color: #eeeeee;
+    --client-icon-color: #afb1b8;
+    --border-color-btn-modal: rgba(0, 0, 0, 0.1);
+    --border-color-btn-push-mail: rgba(255, 255, 255, 0.3);
+    --border-modal-input: rgba(33, 33, 33, 0.2);
+    --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --team-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    --project-card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    --filtr-card-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    --modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    --list-gap: 30px;
+    --social-gap: 10px;
+    --filtr-gap: 8px;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  $fontPrimary: Roboto, sans-serif;
+  $fontLogo: Raleway, sans-serif; 
+}

@@ -1,0 +1,31 @@
+.work__title {
+    @extend %section-title;
+}
+
+.work__list {
+    display: flex;
+    gap: var(--list-gap);
+}
+
+.work__item {
+    flex-basis: calc((100% - (2 * var(--list-gap))) / 3);
+}
+
+.work-thumb {
+    position: relative;
+}
+
+.work-thumb__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background-color: var(--background-item-work);
+}

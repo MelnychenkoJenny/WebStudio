@@ -1,0 +1,54 @@
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    color: var(--white-color);
+    background-color: var(--footer-background-color);
+}
+  
+.footer {
+    display: flex;
+    align-items: baseline;
+    gap: 93px;
+}
+  
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--white-color);
+  
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.accent {
+    color: var(--accent-color);
+}  
+  
+.adress-map {
+    color: var(--white-color);
+    font-style: normal;
+    transition: color 250ms var(--timing-function);
+}
+  
+.adress-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+  
+.auth-mail,
+.auth-tel {
+    color: var(--black-opacity-color);
+    font-style: normal;
+    transition: color 250ms var(--timing-function);
+}
+  
+.adress-map:hover,
+.adress-map:focus,
+.auth-mail:hover,
+.auth-mail:focus,
+.auth-tel:hover,
+.auth-tel:focus {
+    color: var(--accent-color);
+}

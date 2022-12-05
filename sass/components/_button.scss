@@ -1,0 +1,56 @@
+.button.primary {
+    @extend %button;
+    min-width: 216px;
+    height: 50px;
+  
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    box-shadow: var(--button-shadow);
+    @include transition( background-color, box-shadow);
+
+    &:hover,
+    &:focus {
+        background-color: var(--background-active-button);
+        box-shadow: var(--button-shadow);
+    }
+}
+
+
+.button.push {
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+    background-color: var(--background-active-button);
+    box-shadow: var(--button-shadow);
+    }
+}
+  
+.button.secondary {
+    @extend %button;
+    padding: 6px 25px;
+    color: var(--title-text-color);
+    background-color: var(--background-grey-color);
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    @include transition(color, background-color, box-shadow);
+
+
+    &:hover,
+    &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    box-shadow: var(--filtr-card-shadow);
+    }
+}
