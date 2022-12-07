@@ -11,7 +11,8 @@
     line-height: 1.88;
     letter-spacing: 0.06em;
     box-shadow: var(--button-shadow);
-    @include transition( background-color, box-shadow);
+    @include transition(background-color);
+    @include transition(box-shadow);
 
     &:hover,
     &:focus {
@@ -23,7 +24,7 @@
 
 .button.push {
     min-width: 200px;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 
@@ -44,7 +45,9 @@
     font-size: 16px;
     line-height: 1.63;
     letter-spacing: 0.03em;
-    @include transition(color, background-color, box-shadow);
+    @include transition(color);
+    @include transition(background-color);
+    @include transition(box-shadow);
 
 
     &:hover,

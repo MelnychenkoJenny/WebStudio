@@ -3,12 +3,13 @@
     margin-bottom: 20px;
     font-weight: 700;
     line-height: 1.1429;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
   }
   
   .footer-form {
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
   }
   
   .footer-label {
@@ -16,14 +17,18 @@
   }
   
   .footer-input {
-    width: 358px;
+    margin-bottom: 20px;
+    width: 100%;
     padding: 15px 16px;
     border: 1px solid var(--border-color-btn-push-mail);
-    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
     border-radius: 4px;
     background-color: var(--footer-background-color);
-    transition: border-color 250ms var(--timing-function),
-      outline 250ms var(--timing-function);
+    @include transition(border-color);
+    @include transition(outline);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
   
   .footer-input:focus {

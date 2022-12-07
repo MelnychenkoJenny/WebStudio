@@ -7,14 +7,33 @@
 }
   
 .footer {
-    display: flex;
-    align-items: baseline;
-    gap: 93px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-around;
+        row-gap: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        gap: 93px;
+        text-align: left;
+    }
+}
+
+.section-adress, .section-active {
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+    }
 }
   
 .logo-footer {
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
     color: var(--white-color);
   
     font-family: 'Raleway', sans-serif;
@@ -30,18 +49,18 @@
 .adress-map {
     color: var(--white-color);
     font-style: normal;
-    transition: color 250ms var(--timing-function);
+    @include transition(color);
 }
   
 .adress-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
 }
   
 .auth-mail,
 .auth-tel {
     color: var(--black-opacity-color);
     font-style: normal;
-    transition: color 250ms var(--timing-function);
+    @include transition(color);
 }
   
 .adress-map:hover,
