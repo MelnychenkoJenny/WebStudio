@@ -1217,6 +1217,11 @@ header {
   color: var(--accent-color);
   text-decoration: underline;
 }
+@media screen and (min-width: 480px) {
+  .checkbox-link {
+    text-decoration: none;
+  }
+}
 @media screen and (max-width: 1199px) {
   .checkbox-link {
     font-size: 12px;
