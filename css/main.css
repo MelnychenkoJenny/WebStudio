@@ -993,7 +993,7 @@ header {
   flex-direction: column;
   position: absolute;
   overflow: auto;
-  height: 455px;
+  max-height: 455px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
