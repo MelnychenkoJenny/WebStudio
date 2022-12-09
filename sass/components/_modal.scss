@@ -21,12 +21,12 @@
   flex-direction: column;
   position: absolute;
   overflow: auto;
-  max-height: 455px;
+  max-height: 500px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   max-width: 300px;
-  padding: 10px;
+  padding: 20px;
   background-color: var(--white-color);
   box-shadow: var(--modal-shadow);
   border-radius: 4px;
@@ -115,7 +115,7 @@
 }
 
 .modal-input {
-  padding: 11px 40px;
+  padding: 8px 30px;
   border: 1px solid var(--border-modal-input);
   border-radius: 4px;
   @include transition(border-color);
@@ -124,6 +124,9 @@
   &:focus {
     border-color: var(--accent-color);
     outline: var(--accent-color);
+  }
+  @media screen and (min-width: 480px) {
+    padding: 11px 40px;
   }
 }
 
@@ -244,10 +247,4 @@
       bottom: 3px;
     }
   }  
-}
-
-.modal-form {
-  .button {
-    margin: 0 auto;
-  }
 }

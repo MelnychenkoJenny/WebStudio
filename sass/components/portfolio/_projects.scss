@@ -1,5 +1,4 @@
 .section {
-
     .projects {
         padding-top: 0;
     }
@@ -12,7 +11,10 @@
 }
 
 .projects-item {
-    flex-basis: calc((100% - (2 * var(--list-gap))) / 3);
+    flex-basis: calc((100% - (1 * var(--list-gap))) / 2);
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - (2 * var(--list-gap))) / 3);
+    }
 }
   
 .projects-link {

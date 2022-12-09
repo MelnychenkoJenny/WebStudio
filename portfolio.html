@@ -63,6 +63,50 @@
             >
           </li>
         </ul>
+        <button type="button" class="button menu-open" data-menu-open>
+          <svg width="40" height="40" class="menu-open__icon">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="button menu-close" data-menu-close>
+          <svg width="40" height="40" class="menu-close__icon">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-menu">
+          <ul class="site-menu list">
+            <li class="site-menu__item">
+              <a href="./index.html" class="site-menu__link link"
+                >Студія</a
+              >
+            </li>
+            <li class="site-menu__item">
+              <a href="./portfolio.html" class="site-menu__link site-menu__link--current link">Портфоліо</a>
+            </li>
+            <li class="site-menu__item">
+              <a href="#" class="site-menu__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="auth-menu list">
+          <li class="auth-menu__item">
+            <a href="tel:+380961111111" class="auth-menu__link link tel"> +38 096 111 11 11</a>
+          </li>
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-menu__link link mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-social list">
+          <li class="menu-social__item"><a href="#" class="menu-social__link link">Instagram</a></li>
+          <li class="menu-social__item"><a href="#" class="menu-social__link link">Twitter</a></li>
+          <li class="menu-social__item"><a href="#" class="menu-social__link link">Facebook</a></li>
+          <li class="menu-social__item"><a href="#" class="menu-social__link link">LinkedIn</a></li>
+        </ul>
       </div>
     </header>
 
@@ -96,13 +140,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-one.jpg 1x, ./images/portfolio/project-one-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-one-tab.jpg    1x,
+                        ./images/portfolio/project-one-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-one-mob.jpg    1x,
+                        ./images/portfolio/project-one-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-one.jpg"
+                    src="./images/portfolio/project-one-mob.jpg"
                     alt="Веб-сайт Технокряк"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -119,13 +182,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-two.jpg 1x, ./images/portfolio/project-two-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-two-tab.jpg    1x,
+                        ./images/portfolio/project-two-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-two-mob.jpg    1x,
+                        ./images/portfolio/project-two-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-two.jpg"
+                    src="./images/portfolio/project-two-mob.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -143,13 +225,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-three.jpg 1x, ./images/portfolio/project-three-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-three-tab.jpg    1x,
+                        ./images/portfolio/project-three-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-three-mob.jpg    1x,
+                        ./images/portfolio/project-three-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-three.jpg"
+                    src="./images/portfolio/project-three-mob.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -167,13 +268,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-four.jpg 1x, ./images/portfolio/project-four-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-four-tab.jpg    1x,
+                        ./images/portfolio/project-four-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-four-mob.jpg    1x,
+                        ./images/portfolio/project-four-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-four.jpg"
+                    src="./images/portfolio/project-four-mob.jpg"
                     alt="Проєкт Prime"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -191,13 +311,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-five.jpg 1x, ./images/portfolio/project-five-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-five-tab.jpg    1x,
+                        ./images/portfolio/project-five-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-five-mob.jpg    1x,
+                        ./images/portfolio/project-five-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-five.jpg"
+                    src="./images/portfolio/project-five-mob.jpg"
                     alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -215,13 +354,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-six.jpg 1x, ./images/portfolio/project-six-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-six-tab.jpg    1x,
+                        ./images/portfolio/project-six-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-six-mob.jpg    1x,
+                        ./images/portfolio/project-six-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-six.jpg"
+                    src="./images/portfolio/project-six-mob.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -239,13 +397,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-seven.jpg 1x, ./images/portfolio/project-seven-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-seven-tab.jpg    1x,
+                        ./images/portfolio/project-seven-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-seven-mob.jpg    1x,
+                        ./images/portfolio/project-seven-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-seven.jpg"
+                    src="./images/portfolio/project-seven-mob.jpg"
                     alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -263,13 +440,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-eight.jpg 1x, ./images/portfolio/project-eight-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-eight-tab.jpg    1x,
+                        ./images/portfolio/project-eight-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-eight-mob.jpg    1x,
+                        ./images/portfolio/project-eight-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-eight.jpg"
+                    src="./images/portfolio/project-eight-mob.jpg"
                     alt="Проєкт LAB"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -286,13 +482,32 @@
             <li class="projects-item">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
-                  <img
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/project-nine.jpg 1x, ./images/portfolio/project-nine-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-nine-tab.jpg    1x,
+                        ./images/portfolio/project-nine-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/project-nine-mob.jpg    1x,
+                        ./images/portfolio/project-nine-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
                     class="projects-image"
-                    src="./images/portfolio/project-nine.jpg"
+                    src="./images/portfolio/project-nine-mob.jpg"
                     alt="Growing Business"
-                    width="370"
-                    height="294"
+                    width="450"
                   />
+                  </picture>
                     <p class="projects-overlay-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
                       Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
@@ -342,7 +557,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="section-active">
           <span class="active-social">Приєднуйтесь</span>
           <ul class="footer-social-list list">
             <li class="footer-social-item">
@@ -394,5 +609,19 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
+
+    <script>
+      (() => {
+        document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+          e.preventDefault();
+
+          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}: ${value}`));
+
+          e.currentTarget.reset();
+        });
+      })();
+    </script>
   </body>
 </html>
