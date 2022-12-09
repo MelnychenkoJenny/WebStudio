@@ -331,13 +331,18 @@ header {
   display: block;
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.175;
   letter-spacing: 0.02em;
   transition: color 250ms var(--timing-function);
 }
 .site-menu__link:hover, .site-menu__link:focus, .site-menu__link--current {
   color: var(--accent-color);
+}
+@media screen and (min-width: 468px) {
+  .site-menu__link {
+    font-size: 40px;
+  }
 }
 
 .auth-menu {
@@ -986,11 +991,11 @@ header {
   flex-direction: column;
   position: absolute;
   overflow: auto;
+  width: 330px;
   max-height: 500px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 300px;
   padding: 20px;
   background-color: var(--white-color);
   box-shadow: var(--modal-shadow);
