@@ -1,11 +1,16 @@
 .nav {
-    display: flex;
-    align-items: center;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .site-nav {
     display: flex;
     gap: 50px;
+
 }
 
 .site-nav__link {

@@ -4,9 +4,10 @@
 @import "./utils/mixin";
 @import "./utils/breakpoints";
 @import "./base/base";
-// @import "./components/header";
-// @import "./components/site-nav";
-// @import "./components/auth-nav";
+@import "./components/header";
+@import "./components/site-nav";
+@import "./components/auth-nav";
+@import "./components/mob-menu";
 @import "./components/hero";
 @import "./components/feature";
 @import "./components/work";

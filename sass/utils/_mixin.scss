@@ -2,12 +2,10 @@
     transition: $type 250ms var(--timing-function);
 }
 
-// @mixin flex($type: flex) {
-//     display: $type;
-// }
-// @mixin flexMainAxis($type: center) {
-//     justify-content: $type;
-// }
-// @mixin flexCrossAxis($type: center) {
-//     align-items: $type;
-// }
+@mixin retina {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+    }
+}

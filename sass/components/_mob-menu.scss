@@ -1,0 +1,125 @@
+.mob-menu {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    padding: 48px 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: var(--white-color);
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-open__icon, .menu-close__icon {
+    &:hover,
+    &:focus {
+        fill: currentColor;
+    }
+}
+
+.site-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.site-menu__link {
+    display: block;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
+    color: var(--title-text-color);
+  
+    font-weight: 500;
+    font-size: 40px;
+    line-height: calc(47 / 40);
+    letter-spacing: 0.02em;
+    @include transition(color);
+
+    &:hover,
+    &:focus,
+    &--current {
+        color: var(--accent-color);
+    }
+}
+
+.auth-menu {
+    margin-top: auto;
+    margin-bottom: 64px;
+}
+
+.auth-menu__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.auth-menu__link {
+    color: var(--accent-color); 
+    font-weight: 500;
+    font-size: 34px;
+    line-height: calc(40 / 34);
+    letter-spacing: 0.02em;
+}
+
+.auth-menu__link.tel {
+    @media screen and (max-width: 377px) {
+        font-size: 26px; 
+    }
+}
+
+.auth-menu__link.mail {
+    color: var(--primary-text-color);
+    font-size: 24px;
+    line-height: calc(28 / 24);
+}
+
+.menu-social {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.menu-social__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: var(--accent-color); 
+}
+
+.menu-social__item:not(:first-child) {
+    padding-left: 10px;
+}
+
+.menu-social__item:not(:last-child) {
+
+    padding-right: 10px;
+}
+
+.menu-social__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.button.menu-open, .button.menu-close {
+    top: 10px;
+    right: 15px;
+    display: block;
+    margin-left: auto;
+    padding: 0;
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.button.menu-close {
+    position: absolute;
+}

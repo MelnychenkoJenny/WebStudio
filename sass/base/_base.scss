@@ -41,3 +41,13 @@ button {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
