@@ -21,7 +21,7 @@
   flex-direction: column;
   position: absolute;
   overflow: auto;
-  width: 400px;
+  min-width: 100%;
   max-height: 500px;
   top: 50%;
   left: 50%;
