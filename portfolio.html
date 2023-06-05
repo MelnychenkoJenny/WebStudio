@@ -117,19 +117,19 @@
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filtr-list list">
             <li class="filtr-item">
-              <button type="button" class="button secondary">Усі</button>
+              <button type="button" class="button secondary" data-category="all">Усі</button>
             </li>
             <li class="filtr-item">
-              <button type="button" class="button secondary">Веб-сайти</button>
+              <button type="button" class="button secondary" data-category="web">Веб-сайти</button>
             </li>
             <li class="filtr-item">
-              <button type="button" class="button secondary">Додатки</button>
+              <button type="button" class="button secondary" data-category="app">Додатки</button>
             </li>
             <li class="filtr-item">
-              <button type="button" class="button secondary">Дизайн</button>
+              <button type="button" class="button secondary" data-category="design">Дизайн</button>
             </li>
             <li class="filtr-item">
-              <button type="button" class="button secondary">Маркетинг</button>
+              <button type="button" class="button secondary" data-category="marketing">Маркетинг</button>
             </li>
           </ul>
         </div>
@@ -137,7 +137,7 @@
         <!-- Projects -->
         <div class="container projects">
           <ul class="projects-list list">
-            <li class="projects-item">
+            <li class="projects-item" data-category="web">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -179,7 +179,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="design">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -222,7 +222,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="app">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -265,7 +265,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="marketing">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -308,7 +308,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="app">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -351,7 +351,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="web">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -394,7 +394,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="design">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -437,7 +437,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="marketing">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -479,7 +479,7 @@
               </a>
             </li>
 
-            <li class="projects-item">
+            <li class="projects-item" data-category="app">
               <a href="#" class="projects-link link">
                 <div class="projects-thumb">
                   <picture>
@@ -611,6 +611,7 @@
     </footer>
 
     <script src="./js/menu.js"></script>
+    <script src="./js/filter.js"></script>
 
     <script>
       (() => {
