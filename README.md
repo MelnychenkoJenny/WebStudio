@@ -1,1 +1,6 @@
-# goit-markup-hw-08
+# WebStudio
+
+## Dual-page adaptive website with project filtering.
+
+![hero](./assets/herojpg.jpg)
+![portfolio](./assets/portfolio.jpg)
